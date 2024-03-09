@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -Wl,--no-undefined -shared -Wl,-soname,libSDL2_ttf-2.0.so.0 -o libSDL2_ttf-2.0.so.0.2200.0 CMakeFiles/SDL2_ttf.dir/SDL_ttf.c.o  -Wl,-rpath,/home/Nesmy/Playground/PingPong/build/vendor/Knuckles/vendor/SDL2 ../SDL2/libSDL2-2.0.so.0.3000.1 /usr/lib/libfreetype.so 

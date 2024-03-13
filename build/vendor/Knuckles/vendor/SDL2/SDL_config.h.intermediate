@@ -74,7 +74,7 @@
 #define HAVE_WCHAR_H 1
 #define HAVE_LINUX_INPUT_H 1
 /* #undef HAVE_PTHREAD_NP_H */
-#define HAVE_LIBUNWIND_H 1
+/* #undef HAVE_LIBUNWIND_H */
 
 /* C library functions */
 #define HAVE_DLOPEN 1
@@ -98,8 +98,8 @@
 #define HAVE_MEMMOVE 1
 #define HAVE_MEMCMP 1
 #define HAVE_WCSLEN 1
-#define HAVE_WCSLCPY 1
-#define HAVE_WCSLCAT 1
+/* #undef HAVE_WCSLCPY */
+/* #undef HAVE_WCSLCAT */
 /* #undef HAVE__WCSDUP */
 #define HAVE_WCSDUP 1
 #define HAVE_WCSSTR 1
@@ -110,8 +110,8 @@
 #define HAVE_WCSNCASECMP 1
 /* #undef HAVE__WCSNICMP */
 #define HAVE_STRLEN 1
-#define HAVE_STRLCPY 1
-#define HAVE_STRLCAT 1
+/* #undef HAVE_STRLCPY */
+/* #undef HAVE_STRLCAT */
 /* #undef HAVE__STRREV */
 /* #undef HAVE__STRUPR */
 /* #undef HAVE__STRLWR */
@@ -219,7 +219,7 @@
 /* #undef HAVE_ALTIVEC_H */
 #define HAVE_DBUS_DBUS_H 1
 #define HAVE_FCITX 1
-/* #undef HAVE_IBUS_IBUS_H */
+#define HAVE_IBUS_IBUS_H 1
 #define HAVE_SYS_INOTIFY_H 1
 #define HAVE_INOTIFY_INIT 1
 #define HAVE_INOTIFY_INIT1 1
@@ -240,7 +240,7 @@
 #endif
 
 #define HAVE_LIBUDEV_H 1
-#define HAVE_LIBSAMPLERATE_H 1
+/* #undef HAVE_LIBSAMPLERATE_H */
 #define HAVE_LIBDECOR_H 1
 
 /* #undef HAVE_D3D_H */
@@ -305,20 +305,20 @@
 /* #undef SDL_AUDIO_DRIVER_FUSIONSOUND */
 /* #undef SDL_AUDIO_DRIVER_FUSIONSOUND_DYNAMIC */
 /* #undef SDL_AUDIO_DRIVER_HAIKU */
-#define SDL_AUDIO_DRIVER_JACK 1
-#define SDL_AUDIO_DRIVER_JACK_DYNAMIC "libjack.so.0"
+/* #undef SDL_AUDIO_DRIVER_JACK */
+/* #undef SDL_AUDIO_DRIVER_JACK_DYNAMIC */
 /* #undef SDL_AUDIO_DRIVER_NAS */
 /* #undef SDL_AUDIO_DRIVER_NAS_DYNAMIC */
 /* #undef SDL_AUDIO_DRIVER_NETBSD */
 #define SDL_AUDIO_DRIVER_OSS 1
 /* #undef SDL_AUDIO_DRIVER_PAUDIO */
-#define SDL_AUDIO_DRIVER_PIPEWIRE 1
-#define SDL_AUDIO_DRIVER_PIPEWIRE_DYNAMIC "libpipewire-0.3.so.0"
+/* #undef SDL_AUDIO_DRIVER_PIPEWIRE */
+/* #undef SDL_AUDIO_DRIVER_PIPEWIRE_DYNAMIC */
 #define SDL_AUDIO_DRIVER_PULSEAUDIO 1
 #define SDL_AUDIO_DRIVER_PULSEAUDIO_DYNAMIC "libpulse.so.0"
 /* #undef SDL_AUDIO_DRIVER_QSA */
-/* #undef SDL_AUDIO_DRIVER_SNDIO */
-/* #undef SDL_AUDIO_DRIVER_SNDIO_DYNAMIC */
+#define SDL_AUDIO_DRIVER_SNDIO 1
+#define SDL_AUDIO_DRIVER_SNDIO_DYNAMIC "libsndio.so.7"
 /* #undef SDL_AUDIO_DRIVER_SUNAUDIO */
 /* #undef SDL_AUDIO_DRIVER_WASAPI */
 /* #undef SDL_AUDIO_DRIVER_WINMM */
@@ -458,7 +458,7 @@
 /* #undef SDL_VIDEO_RENDER_D3D11 */
 /* #undef SDL_VIDEO_RENDER_D3D12 */
 #define SDL_VIDEO_RENDER_OGL 1
-/* #undef SDL_VIDEO_RENDER_OGL_ES */
+#define SDL_VIDEO_RENDER_OGL_ES 1
 #define SDL_VIDEO_RENDER_OGL_ES2 1
 /* #undef SDL_VIDEO_RENDER_DIRECTFB */
 /* #undef SDL_VIDEO_RENDER_METAL */
@@ -468,7 +468,7 @@
 
 /* Enable OpenGL support */
 #define SDL_VIDEO_OPENGL 1
-/* #undef SDL_VIDEO_OPENGL_ES */
+#define SDL_VIDEO_OPENGL_ES 1
 #define SDL_VIDEO_OPENGL_ES2 1
 /* #undef SDL_VIDEO_OPENGL_BGL */
 /* #undef SDL_VIDEO_OPENGL_CGL */
@@ -528,7 +528,7 @@
 #define DYNAPI_NEEDS_DLOPEN 1
 
 /* Enable dynamic libsamplerate support */
-#define SDL_LIBSAMPLERATE_DYNAMIC "$<TARGET_SONAME_FILE_NAME:SampleRate::samplerate>"
+/* #undef SDL_LIBSAMPLERATE_DYNAMIC */
 
 /* Enable ime support */
 #define SDL_USE_IME 1
@@ -541,7 +541,7 @@
 /* #undef SDL_VIDEO_VITA_PVR */
 /* #undef SDL_VIDEO_VITA_PVR_OGL */
 
-#define SDL_HAVE_LIBDECOR_GET_MIN_MAX 1
+/* #undef SDL_HAVE_LIBDECOR_GET_MIN_MAX */
 
 #if !defined(HAVE_STDINT_H) && !defined(_STDINT_H_)
 /* Most everything except Visual Studio 2008 and earlier has stdint.h now */

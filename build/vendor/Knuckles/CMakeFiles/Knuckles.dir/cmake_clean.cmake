@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Knuckles.dir/cmake_pch.hxx.gch"
+  "CMakeFiles/Knuckles.dir/cmake_pch.hxx.gch.d"
   "CMakeFiles/Knuckles.dir/src/Animation.cpp.o"
   "CMakeFiles/Knuckles.dir/src/Animation.cpp.o.d"
   "CMakeFiles/Knuckles.dir/src/Application.cpp.o"

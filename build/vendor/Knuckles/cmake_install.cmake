@@ -1,4 +1,4 @@
-# Install script for directory: /home/Nesmy/Playground/PingPong/vendor/Knuckles
+# Install script for directory: /home/nesmy/Playground/PingPong/vendor/Knuckles
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -44,11 +44,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/Nesmy/Playground/PingPong/build/vendor/Knuckles/vendor/Glew/build/cmake/cmake_install.cmake")
-  include("/home/Nesmy/Playground/PingPong/build/vendor/Knuckles/vendor/SOIL/cmake_install.cmake")
-  include("/home/Nesmy/Playground/PingPong/build/vendor/Knuckles/vendor/SDL2/cmake_install.cmake")
-  include("/home/Nesmy/Playground/PingPong/build/vendor/Knuckles/vendor/SDL2_ttf/cmake_install.cmake")
-  include("/home/Nesmy/Playground/PingPong/build/vendor/Knuckles/imgui/cmake_install.cmake")
+  include("/home/nesmy/Playground/PingPong/build/vendor/Knuckles/vendor/Glew/build/cmake/cmake_install.cmake")
+  include("/home/nesmy/Playground/PingPong/build/vendor/Knuckles/vendor/SOIL/cmake_install.cmake")
+  include("/home/nesmy/Playground/PingPong/build/vendor/Knuckles/vendor/SDL2/cmake_install.cmake")
+  include("/home/nesmy/Playground/PingPong/build/vendor/Knuckles/vendor/SDL2_ttf/cmake_install.cmake")
+  include("/home/nesmy/Playground/PingPong/build/vendor/Knuckles/imgui/cmake_install.cmake")
 
 endif()
 

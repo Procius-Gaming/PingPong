@@ -38,6 +38,7 @@ void PingPong::AppLoad() {
                               GetRenderer()->GetScreenHeight() / 2 -
                                   (float)Score2Sp->GetTexHeight() / 2,
                               0));
+  Score2->SetRotation(40.0f);
 
   // Ball
   Knuckles::Object *BallOb = new Knuckles::Object(this, "Ball");
@@ -73,6 +74,14 @@ void PingPong::AppLoad() {
                                   (float)CumpSprite->GetTexWidth() / 2,
                               0, 0));
   CumpMov = CumpOb->GetPosition();
+
+  int speed = 7;
+  
+  Vector3 BallMov = Vector::Zero;
+
+  BallMov.y += speed;
+  BallMov.x += speed;
+  BallOb0->SetPosition(BallMov);
 }
 
 void PingPong::AppInput(const Knuckles::InputState &state) {

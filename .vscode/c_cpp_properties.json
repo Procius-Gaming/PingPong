@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${default}",
+                "${workspaceFolder}/vendor/Knuckles/include",
+                "${workspaceFolder}/build/vendor/Knuckles/vendor/SDL2/include/SDL2",
+                "${workspaceFolder}/vendor/Knuckles/vendor/SDL2/include",
+                "${workspaceFolder}/vendor/Knuckles/vendor/spdlog/include",
+                "${workspaceFolder}/vendor/Knuckles/vendor/rapidjson/include",
+                "${workspaceFolder}/vendor/Knuckles/vendor/Glew/include",
+                "${workspaceFolder}/vendor/Knuckles/vendor/SDL2_ttf",
+                "${workspaceFolder}/vendor/Knuckles/vendor/imgui"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

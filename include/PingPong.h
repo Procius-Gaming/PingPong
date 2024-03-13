@@ -9,12 +9,15 @@ public:
 
   void AppLoad() override;
   void AppInput(const Knuckles::InputState &state) override;
+  void AppUpdate(float deltaTime) override;
 
 private:
   Vector3 PlayerMov;
   Vector3 CumpMov;
   Vector3 BallMov;
+  Vector3 TrailMov;
   Knuckles::Object *PlayerOb;
   Knuckles::Object *CumpOb;
   Knuckles::Object *BallOb;
+  Knuckles::Object *TrailOb;
 };
